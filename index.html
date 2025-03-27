@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice Roller</title>
+  <style>
+    body {
+    background-color: #f4f7fc;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin-top: 50px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: white;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #cc1313;
+    margin-bottom: 20px;
+  }
+  
+  .product {
+    margin: 30px;
+  }
+  .btn-quantity{
+    height:50px ;
+    cursor: pointer;
+  }
+  
+  .cream img {
+    max-width: 150px;
+    transition: transform 0.2s ease-in-out;
+  }
+   
+  .btn-add-cart{
+   font-size: 20px;
+   padding: 10px 20px;
+   display: block;
+   margin: 20px auto; 
+   background-color: #cc1313;
+   color: #f4f7fc;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.quantity-text{
+    font-size: 40px;
+    margin: 0 50px  ;
+}
+
+
+  </style>
+  
+</head>
+<body>
+  <div class="container">
+    <h1 class="productname">🌞 Sunscreen 🌞</h1>
+   
+    <div class="product">
+      <img id="cream img" src="pic.webp" alt="img" />
+      <p>
+       <b> Dot & Key Sunscreen </b><br>
+     Dot & Key's Strawberry Dew Tinted Sunscreen SPF 50+ PA++++ is a broad-spectrum sunscreen 
+     that provides protection against both UVA and UVB rays. 
+     
+    </p>
+    <h2>Price : ₹451 /-</h2>
+    <div class="quantity-container">
+        <img src="minus (1).png" class="btn-quantity" id="minus" onclick="decrease()"/>
+
+        <span class="quantity-text" id="quantity-text">1</span>
+
+        <img src="plus (1).png" class="btn-quantity" id="plus" onclick="increase()"/>
+    </div>
+    <button class="btn-add-cart">
+        Add to Cart
+    </button>
+    </div>
+  </div>
+  <script>
+    const quantityText = document.getElementById('quantity-text');
+ function increase(){
+  let quantity = parseInt(quantityText.innerText)
+  quantityText.innerText = ++quantity;
+ }
+
+ function decrease(){
+  let quantity = parseInt(quantityText.innerText)
+  if(quantity > 1){
+    quantityText.innerText = --quantity;
+  }
+  else{
+    alert("You can't decrease the quantity less than 1");
+  }
+ }
+  </script>
+  
+
+
+
+</body>
+</html>
