@@ -25,5 +25,5 @@ A sleek, responsive e-commerce product page built using **HTML**, **CSS**, and *
 
 - Users can increase or decrease the quantity using `+` and `-` buttons.
 - The selected quantity is reflected in real-time.
-- Clicking "Add to Cart" triggers a mock cart update (can be extended with backend integration).
+  
 
