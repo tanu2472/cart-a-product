@@ -18,8 +18,8 @@ A sleek, responsive e-commerce product page built using **HTML**, **CSS**, and *
 
 ## 📸 Preview
 
-![Screenshot.png](#)  
-*Note: Replace with actual screenshot or GitHub Pages link if deployed.*
+![Screenshot.png](https://github.com/tanu2472/cart-a-product/blob/main/Screenshot.png)  
+
 
 ## 🔧 How It Works
 
