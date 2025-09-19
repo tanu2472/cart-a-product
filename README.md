@@ -18,7 +18,7 @@ A sleek, responsive e-commerce product page built using **HTML**, **CSS**, and *
 
 ## 📸 Preview
 
-![Product Page Screenshot](#)  
+![Screenshot.png](#)  
 *Note: Replace with actual screenshot or GitHub Pages link if deployed.*
 
 ## 🔧 How It Works
